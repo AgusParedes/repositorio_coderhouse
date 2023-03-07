@@ -173,18 +173,102 @@ a{
     text-decoration: none;
 }
 
-footer {
-    background-color:#e2000b;
+.grid_container_footer {  display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 150px;
+    grid-auto-flow: row;
+    background-color: rgb(226, 0, 11);
     color: white;
-    margin-top: 0; 
-    width: 100%;
+    grid-template-areas:
+      "footer_izquierda footer_medio footer_derecha";
+  }
+  
+.footer_izquierda { grid-area: footer_izquierda;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    margin-left: 43px;
+    margin-top: 10px;
 }
-footer a, main .section_futbol_femenino a, main .section_institucionales a{
+.footer_medio { 
+    grid-area: footer_medio;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer_derecha { grid-area: footer_derecha;
+    display: flex;
+    align-items: center;
+}
+.icono_footer{
+    font-size: 20px;
+    text-decoration: none;
     color: white;
 }
-footer p, .ul_footer, .ul_footer li{
+  
+.ul_footer li{
     display: inline-block;
+    font-size: 23px;
+  }
+.ul_footer{
+    padding-left: 0;
+  }
+.p_footer{
+    margin-bottom: 0;
+  }
+.a_footer{
+    text-decoration: none;
+    color: white;
+  }
+  /*footer mobil*/
+
+  .grid_container_footerMobil {  display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 60px;
+    background-color:rgb(226, 0, 11);
+    color: white;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "escudo_footer escudo_footer escudo_footer escudo_footer"
+      "redes_footer redes_footer copy_footer copy_footer";
+  }
+  
+  .escudo_footer { grid-area: escudo_footer;
+    display: flex;
+    justify-content: center;
 }
+  
+  .copy_footer { grid-area: copy_footer; 
+    display: flex;
+    justify-content: center;
+}
+  
+  .redes_footer { grid-area: redes_footer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul_footer{
+    display: flex;
+    gap: 10px;
+}
+.ul_footer li a{
+    font-size: 25px;
+}
+
+@media (max-width: 700px){
+    .grid_container_footerMobil{
+        display: grid;
+    }
+    .grid_container_footer{
+        display: none;
+    }
+}
+
+/*Aca termina footer Mobil*/  
+
 main a{
     color: black;
     text-decoration: none;
@@ -326,51 +410,94 @@ main a{
 
 
 /*Noticias*/
-.div_imagen_noticia img{
-    width: 100%;
+.grid_container_noticias {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.95fr 0.2fr 1fr 0.2fr 1fr 0.2fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "futbol_masculino futbol_masculino futbol_masculino"
+      "noticia_masculino_izq noticia_masculino_medio noticia_masculino_derecha"
+      "noticia_femenino noticia_femenino noticia_femenino"
+      "noticia_femenino_izq noticia_femenino_medio noticia_femenino_derecha"
+      "noticia_basquet noticia_basquet noticia_basquet"
+      "noticia_basquet_izq noticia_basquet_medio noticia_basquet_derecha"
+      "noticia_institucionales noticia_institucionales noticia_institucionales"
+      "noticia_institucionales_izq noticia_institucionales_medio noticia_institucionales_derecha";
+  }
+  
+  .futbol_masculino { grid-area: futbol_masculino;}
+  
+  .noticia_masculino_izq { grid-area: noticia_masculino_izq; }
+  
+  .noticia_masculino_medio { grid-area: noticia_masculino_medio; }
+  
+  .noticia_masculino_derecha { grid-area: noticia_masculino_derecha; }
+  
+  .noticia_femenino { grid-area: noticia_femenino; background-color: rgb(229 229 229);}
+  
+  .noticia_femenino_izq { grid-area: noticia_femenino_izq;background-color: rgb(229 229 229);}
+  
+  .noticia_femenino_medio { grid-area: noticia_femenino_medio;background-color: rgb(229 229 229);}
+  
+  .noticia_femenino_derecha { grid-area: noticia_femenino_derecha;background-color: rgb(229 229 229);}
+  
+  .noticia_basquet { grid-area: noticia_basquet; }
+  
+  .noticia_basquet_izq { grid-area: noticia_basquet_izq; margin-bottom: 32px; }
+  
+  .noticia_basquet_medio { grid-area: noticia_basquet_medio; margin-bottom: 32px; }
+  
+  .noticia_basquet_derecha { grid-area: noticia_basquet_derecha; margin-bottom: 32px; }
+  
+  .noticia_institucionales { grid-area: noticia_institucionales;background-color: rgb(229 229 229); }
+  
+  .noticia_institucionales_izq { grid-area: noticia_institucionales_izq;background-color: rgb(229 229 229);  }
+  
+  .noticia_institucionales_medio { grid-area: noticia_institucionales_medio;background-color: rgb(229 229 229); }
+  
+  .noticia_institucionales_derecha { grid-area: noticia_institucionales_derecha;background-color: rgb(229 229 229); }
+
+a{
+    text-decoration: none;
 }
-.noticia_masculino, .noticia_basquet, .noticia_institucionales, .noticia_femenino{
-    width: 27%;
-    height: 372px;
-    min-width: 270px;
-}
-.section_futbol_femenino, .section_institucionales{
-    background-color:#b30f18;
-    color: white;
-    padding: 20px;
-}
-.noticia_con_fondo{
-    background-color:#b30f18;
-    padding: 35px 30px;
-    color: white;
-}
-.noticia_con_fondo span{
-    color: white;
-}
-.noticia_sin_fondo{
-    padding: 35px 30px;
-}
-.section_futbol_masculino, .section_basquet{
-    padding: 20px;
-}
-.titulos_noticias{
-    font-size: 22px;
-    display: inline-block;
-}
-.section_futbol_masculino, .section_futbol_femenino, .section_basquet, .section_institucionales{
+.grid_container_noticias article{
     display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
+    justify-content: center;
 }
-.deporte_noticia{
+.futbol_masculino,.noticia_femenino,.noticia_basquet,.noticia_institucionales{
     display: flex;
     align-items: center;
-    gap: 20px;
 }
-.main_noticias h1{
-    margin-left: 20px;
-    margin-top: 5px;
+
+.titulos_noticias{
+    display: flex;
 }
+.titulos_noticias i{
+    margin-top: 10px;
+}
+.titulos_noticias h3{
+    margin-left: 15px;
+}
+.titulo_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.card_noticia{
+    color: black;
+}
+.card_noticia_fondo{
+    background-color: rgb(229 229 229);
+    border-color: rgb(169 169 169);
+}
+.noticia{
+    text-decoration: none;
+}
+.div_vermas span{
+    color: black
+}
+
 
 
 
@@ -486,7 +613,8 @@ main a{
     font-size: 25px;
 }
 
-/*grid*/
+/*grid Fixture*/
+
 .grid_container div{
     justify-self: center; 
     justify-items: center;
@@ -687,6 +815,39 @@ main a{
 
 
 /*tienda*/
+
+.div_container_prendas{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 55px;
+}
+.div_comprar{
+    display: flex;
+    justify-content: center;
+}
+.boton_comprar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CD1018;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+    height: 40px;
+}
+.boton_comprar:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: #CD1018;
+}
+.card_tienda{
+    border: 1px solid red;
+}
+.ultimo_div_prendas{
+    margin-bottom: 50px;
+}
 .main_tienda h2{
     color: white;
     display: inline-block;
@@ -697,48 +858,11 @@ main a{
 }
 .div_tituloPrenda{
     background-color: #CD1018;
+    display: flex;
     margin-top: 55px;
     align-items: center;
     padding: 8px 40px 8px 12px;
     margin-left: 20px;
-}
-.div_prenda{
-    width: 21%;
-    border: 2px solid #CD1018;
-    display: inline-block
-}
-.imagen_tienda{
-    width: 100%;
-}
-.div_textoPrenda,.div_botonTienda,.div_imagenTienda { 
-    padding: 7px 7px;
-}
-.icono_tienda{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    margin-left: 5px;
-}
-.boton_comprar{
-    background-color: #CD1018;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    width: 50%;
-    min-width: 84px;
-}
-.div_botonTienda{
-    display: flex;
-    justify-content: center;
-    height: 12%;
-    margin-bottom: 33px;
-}
-.div_container_prendas{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 55px;
 }
 
 
@@ -787,6 +911,9 @@ main a{
     outline: none;
 }
 .botones_registro_inicioYregistro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 42px;
     font-size: 18px;
@@ -796,10 +923,12 @@ main a{
 .inicioSesion{
     background-color:#db1b24;
     color: white;
+    cursor: pointer;
 }
 .registro{
     background-color: white;
     color: #dd1e27;
+    cursor: pointer;
 }
 .form_container_registro{
     display: flex;
