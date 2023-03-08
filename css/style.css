@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0
 }
+html, body {
+    width: 100%!important;
+    overflow-x: hidden!important;
+}
 .nav{
     background-color: #dd1d24;
     display: flex;
@@ -114,6 +118,7 @@
         display: flex;
         justify-content: center;
         background-color: #e7e7e7;
+        width: 100%;
     }
     .div_paginasNav button{
         font-size: 20px;
@@ -132,7 +137,7 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        width: 445px;
+        width: 100%;
         height: 108px;
         border-radius: 0;
         border-bottom: 2px solid red;
@@ -387,6 +392,9 @@ main a{
     text-decoration: none;
     color: black;
 }
+
+/*Aca empieza mediaquery de index*/
+
 @media (max-width: 700px){
     .section_noticias{
         flex-wrap: wrap;
@@ -433,11 +441,11 @@ main a{
 
 @media (max-width: 420px){
     .article_videoTexto iframe{
-        width: 300px;
-        height: 130px;
+        width: 325px;
+        height: 169px;
     }
 }
-
+/*Aca termina mediaquery de index*/
 
 
 
@@ -552,15 +560,16 @@ a{
 
 }
 .section_container_fixture{
-    display: flex;
     margin-bottom: 50px;
+    display: flex;
 }
 .section_proxPartido{
     display: inline-block;
     margin-left: 100px;
 }
 .section_partidosFixture{
-    width: 800px;
+    display: inline-block;
+    width: 60%;
     height: 100%;
 }
 .titulo_fixture{
@@ -646,6 +655,7 @@ a{
 .resultado_ultimo_partido{
     font-size: 25px;
 }
+
 
 /*grid Fixture*/
 
@@ -807,6 +817,9 @@ a{
 .fechas i{
     font-size: 12px;
 }
+.fechas p{
+    margin-bottom: 0;
+}
 
 .equipo_derecho{
     border-top: 1px solid rgb(163, 163, 163);
@@ -825,13 +838,25 @@ a{
 }
 /*Aca termina grid*/
 
+/*mediaquery de fixture*/
+@media (max-width: 800px){
+    .section_container_fixture{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_partidosFixture{
+        width: 100%;
+        margin-left: -10px;
+        margin-bottom: 65px;
+    }
+
+}
 @media (max-width: 700px){
     .section_container_fixture{
         flex-wrap: wrap;
     }
     .grid_container{
         margin-left: 10px;
-        margin-bottom: 40px;
     }
     .section_proxPartido{
         width: 100%;
@@ -839,8 +864,47 @@ a{
         justify-content: center;
         margin-left: 0;
     }
+    .grid_container {  display: grid;
+        grid-template-columns: 0.4fr 0.2fr 0.4fr;
+        grid-template-rows: 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr;
+        gap: 0px 0px;
+        row-gap: 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "union resultado colon"
+          "river vs union2"
+          "union3 vs2 aldosivi"
+          "boca vs3 union4"
+          "union5 vs4 dyj"
+          "huracan vs5 union6"
+          "union7 vs6 newell"
+          "racing vs7 union8"
+          "union9 vs8 talleres"
+          "velez vs9 union10";
+      }
+    .fechas i,.fechas p,.fechas{
+        display: none;
+        border: none;
+    }
+    .div_container_proximosPartidos h5{
+        font-size: 15px;
+    }
     
 }
+@media (max-width: 350px){
+    .section_partidosFixture{
+        display: flex;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    .section_proxPartido{
+        display: none;
+    }
+    .grid_container{
+        margin-bottom: 20px;
+    }
+}
+/*Termina mediaquery de fixture*/
 
 
 
