@@ -383,7 +383,7 @@ main a{
 .section_noticias{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
 }
 .titulo_noticia_index{
     font-size: 1.5rem;
@@ -395,6 +395,11 @@ main a{
 
 /*Aca empieza mediaquery de index*/
 
+@media (max-width: 800px){
+    .section_proxPartido{
+        margin-left: 0;
+    }
+}
 @media (max-width: 700px){
     .section_noticias{
         flex-wrap: wrap;
@@ -417,14 +422,15 @@ main a{
         float: none;
     }
     .article_videoTexto iframe{
-        width: 417px;
-        height: 223px;
+        width: 398px;
+        height: 224px;
     }
     .video_container{
         display: flex;
         justify-content: center;
+        margin-bottom: 20px;
     }
-    .texto_historia{
+    .texto_historia, .texto_historia span{
         font-size: 15px;
     }
 
