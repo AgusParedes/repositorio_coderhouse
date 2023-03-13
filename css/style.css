@@ -733,6 +733,7 @@ a{
 }
 
 
+
 /*grid Fixture*/
 
 .grid_container div{
@@ -994,6 +995,8 @@ a{
     display: flex;
     justify-content: space-evenly;
     margin-top: 55px;
+    margin-bottom: 30px;
+    padding-left: 20px;
 }
 .div_comprar{
     display: flex;
@@ -1029,6 +1032,7 @@ a{
 }
 .main_tienda h1{
     margin-top: 55px;
+    padding-left: 20px;
 }
 .div_tituloPrenda{
     background-color: #CD1018;
@@ -1037,6 +1041,38 @@ a{
     align-items: center;
     padding: 8px 40px 8px 12px;
     margin-left: 20px;
+}
+.carrusel_container{
+    display: none;
+}
+.carrusel_mio{
+    margin-top: 55px;
+}
+.camisetas_tienda{
+    display: flex;
+    justify-content: space-evenly;
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    display: flex;
+    justify-content: center;
+}
+.icono_carrusel{
+    filter: invert(1) grayscale(100);
+}
+.ultimo_carrusel{
+    margin-bottom: 30px;
+}
+@media (max-width: 993px){
+    .carrusel_container{
+        display: block;
+    }
+    .div_container_prendas{
+        margin: 0;
+    }
+    .div_container_prendas div{
+        display: none;
+    }
+    
 }
 
 
@@ -1052,7 +1088,6 @@ a{
 }
 .section_container_registro{
     width: 49%;
-    height: 657px;
     background-color: white;
 }
 .div_container_registro{
@@ -1060,7 +1095,6 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 507px;
 }
 .div_hijo_container_registro{
     width: 70%;

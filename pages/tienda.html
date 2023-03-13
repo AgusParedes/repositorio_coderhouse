@@ -41,15 +41,15 @@
         <a href="#"><img src="../img/logo_nav.png" class="logo_nav"></a>
         <div class="collapse navbar-collapse div_container_paginas" id="navbarSupportedContent">
           <div class="d-flex justify-content-evenly div_paginasNav">
-            <a type="button" class="btn-outline-light boton_nav inicio" href="../index.html">Inicio</a>
-            <a type="button" class="btn-outline-light boton_nav noticia" href="../pages/noticias.html">Noticias</a>
-            <a type="button" class="btn-outline-light boton_nav fixture" href="../pages/fixture.html">Fixture</a>
-            <a type="button" class="btn-outline-light boton_nav tienda" href="../pages/tienda.html">Tienda</a>
+            <a type="button" class="btn-outline-light boton_nav inicio_nav" href="../index.html">Inicio</a>
+            <a type="button" class="btn-outline-light boton_nav noticia_nav" href="../pages/noticias.html">Noticias</a>
+            <a type="button" class="btn-outline-light boton_nav fixture_nav" href="../pages/fixture.html">Fixture</a>
+            <a type="button" class="btn-outline-light boton_nav tienda_nav" href="../pages/tienda.html">Tienda</a>
             <a type="button" class="btn-outline-light boton_nav registro_menu" href="../pages/registro.html">Iniciar Sesion/Registrarse</a>
           </div>
             <div class="d-flex flex-column justify-content-evenly align-items-center gap-4">
               <a type="button" class="btn-outline-light registro_nav text-center" href="../pages/registro.html">Iniciar Sesion/Registrarse</a>
-              <ul style="list-style: none;" class="d-flex gap-3 ul_nav">
+              <ul style="list-style: none;" class="d-flex ul_nav">
                 <li><a href="https://www.facebook.com/clubaunion" target="_blank" class="fa-brands fa-square-facebook icono_nav"></a>
                 <li><a href="https://www.instagram.com/clubaunion/?hl=es" target="_blank" class="fa-brands fa-instagram icono_nav"></a>
                 <li><a href="https://www.youtube.com/@ClubaunionOficial" target="_blank" class="fa-brands fa-youtube icono_nav"></a>
@@ -66,18 +66,68 @@
             <h2>Camisetas</h2>
             <img src="../img/Tienda/camiseta_tienda.png" alt="" class="icono_tienda">
         </div>
+        <!--Vista Mobil-->
+        <div id="carouselExample" class="carousel slide carrusel_container">
+          <div class="carousel-inner">
+            <div class="carousel-item carrusel_mio active">
+              <div class="card card_tienda" style="width: 17.5rem;">
+                <img src="../img/Tienda/Camiseta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Titular</h5>
+                  <p class="card-text">$14.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carrusel_mio">
+              <div class="card card_tienda" style="width: 18rem;">
+                <img src="../img/Tienda/camiseta_arquero.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Arquero</h5>
+                  <p class="card-text">$12.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carrusel_mio">
+              <div class="card card_tienda" style="width: 18rem;">
+                <img src="../img/Tienda/camiseta_suplente.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Suplente</h5>
+                  <p class="card-text">$12.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon icono_carrusel" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon icono_carrusel" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--Fin Vista Mobil-->
         <div class="div_container_prendas">
             <div>
-                <div class="card card_tienda" style="width: 17.5rem;">
-                    <img src="../img/Tienda/Camiseta.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Camiseta Titular</h5>
-                      <p class="card-text">$14.000</p>
-                      <div class="div_comprar">
-                        <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
-                      </div>                    
-                    </div>
-                  </div>
+              <div class="card card_tienda" style="width: 17.4rem;">
+                <img src="../img/Tienda/Camiseta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Titular</h5>
+                   <p class="card-text">$14.000</p>
+                  <div class="div_comprar">
+                     <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
             </div>
             <div>
                 <div class="card card_tienda" style="width: 18rem;">
@@ -109,6 +159,56 @@
             <h2>Shorts</h2>
             <img src="../img/Tienda/corto_icono.png" alt="" class="icono_tienda">
         </div>
+        <!--Vista Mobil-->
+        <div id="carouselExample2" class="carousel slide carrusel_container">
+          <div class="carousel-inner">
+            <div class="carousel-item carrusel_mio active">
+              <div class="card card_tienda" style="width: 18rem;">
+                <img src="../img/Tienda/pantalon1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Short Azul</h5>
+                  <p class="card-text">$8.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carrusel_mio">
+              <div class="card card_tienda" style="width: 18rem;">
+                <img src="../img/Tienda/pantalon2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Short Rojo</h5>
+                  <p class="card-text">$8.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carrusel_mio">
+              <div class="card card_tienda" style="width: 18rem;">
+                <img src="../img/Tienda/pantalon3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Short Gris</h5>
+                  <p class="card-text">$8.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon icono_carrusel" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+            <span class="carousel-control-next-icon icono_carrusel" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        <!--Fin Vista Mobil-->
         <div class="div_container_prendas">
             <div>
                 <div class="card card_tienda" style="width: 18rem;">
@@ -152,6 +252,56 @@
            <h2>Camperas</h2>
            <img src="../img/Tienda/campera_icon.png" alt="" class="icono_tienda">
         </div>
+        <!--Vista Mobil-->
+        <div id="carouselExample3" class="carousel slide carrusel_container ultimo_carrusel">
+          <div class="carousel-inner">
+            <div class="carousel-item carrusel_mio active">
+              <div class="card card_tienda" style="width: 16.7rem;">
+                <img src="../img/Tienda/campera.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Campera Azul</h5>
+                  <p class="card-text">$15.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carrusel_mio">
+              <div class="card card_tienda" style="width: 17.2rem;">
+                <img src="../img/Tienda/campera_inflable.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Campera Inflable</h5>
+                  <p class="card-text">$17.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carrusel_mio">
+              <div class="card card_tienda" style="width: 18rem;">
+                <img src="../img/Tienda/campera_negra.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Campera Negra</h5>
+                  <p class="card-text">$15.000</p>
+                  <div class="div_comprar">
+                    <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon icono_carrusel" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+            <span class="carousel-control-next-icon icono_carrusel" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--Fin Vista Mobil-->
         <div class="div_container_prendas ultimo_div_prendas">
             <div>
                 <div class="card card_tienda" style="width: 16.7rem;">
@@ -163,7 +313,7 @@
                         <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
                       </div>                    
                     </div>
-                  </div>
+                </div>
             </div>
             <div>
                 <div class="card card_tienda" style="width: 17.2rem;">
@@ -175,7 +325,7 @@
                         <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
                       </div>                    
                     </div>
-                  </div>
+                </div>
             </div>
             <div>
                 <div class="card card_tienda" style="width: 18rem;">
@@ -187,7 +337,7 @@
                         <a href="#" class="btn btn-primary boton_comprar">Comprar</a>
                       </div>                    
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </main>
