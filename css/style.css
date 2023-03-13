@@ -129,9 +129,6 @@ html, body {
         width: 84%;
         border-radius: 0;
     }
-    .inicio:hover, .noticia:hover, .fixture:hover, .tienda:hover{
-        border-bottom: 2px solid red;
-    }
     .inicio_nav, .noticia_nav, .fixture_nav, .tienda_nav{
         border: none;
         align-items: center;
