@@ -132,7 +132,7 @@ html, body {
     .inicio:hover, .noticia:hover, .fixture:hover, .tienda:hover{
         border-bottom: 2px solid red;
     }
-    .inicio, .noticia, .fixture, .tienda{
+    .inicio_nav, .noticia_nav, .fixture_nav, .tienda_nav{
         border: none;
         align-items: center;
         display: flex;
@@ -277,6 +277,11 @@ a{
     }
     .p_footer{
         font-size: 10px;
+    }
+}
+@media (max-width: 875px){
+    .p_footer{
+        font-size: 12px;
     }
 }
 
@@ -509,10 +514,6 @@ main a{
 a{
     text-decoration: none;
 }
-.grid_container_noticias article{
-    display: flex;
-    justify-content: center;
-}
 .futbol_masculino,.noticia_femenino,.noticia_basquet,.noticia_institucionales{
     display: flex;
     align-items: center;
@@ -539,14 +540,83 @@ a{
     background-color: rgb(229 229 229);
     border-color: rgb(169 169 169);
 }
+.card_masculino{
+    width: 23rem;  
+    height: 438px;
+}
+.card_basquet,.card_noticia_fondo{
+    width: 23rem;  
+    height: 466px;
+}
+.card_institucionales{
+    width: 23rem; 
+    height: 414px;
+}
 .noticia{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 .div_vermas span{
     color: black
 }
 
+@media (max-width: 1140px){
+    .card_noticia,.card_noticia_fondo{
+        width: 21rem;
+    }
+}
+@media (max-width: 1100px){
+    .grid_container_noticias {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.95fr 0.2fr 1fr 0.2fr 1fr 0.2fr 0.9fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "futbol_masculino futbol_masculino"
+          "noticia_masculino_izq noticia_masculino_derecha"
+          "noticia_femenino noticia_femenino"
+          "noticia_femenino_izq noticia_femenino_derecha"
+          "noticia_basquet noticia_basquet"
+          "noticia_basquet_izq noticia_basquet_derecha"
+          "noticia_institucionales noticia_institucionales"
+          "noticia_institucionales_izq noticia_institucionales_derecha";
+    }
+    .noticia_basquet_medio,.noticia_femenino_medio,.noticia_institucionales_medio,.noticia_masculino_medio{
+        display: none;
+    }
+}
+@media (max-width: 695px){
+    .card_noticia,.card_noticia_fondo{
+        width: 17rem;
+        font-size: 12px;
+        height: 350px;
+    }
+    .card_institucionales{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 550px){
+    .grid_container_noticias {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.95fr 0.95fr 0.2fr 1fr 1fr 0.2fr 1fr 1fr 0.2fr 0.9fr 0.9fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "futbol_masculino"
+          "noticia_masculino_izq"
+          "noticia_masculino_derecha"
+          "noticia_femenino"
+          "noticia_femenino_izq"
+          "noticia_femenino_derecha"
+          "noticia_basquet"
+          "noticia_basquet_izq"
+          "noticia_basquet_derecha"
+          "noticia_institucionales"
+          "noticia_institucionales_izq"
+          "noticia_institucionales_derecha";
+    }
+}
 
+/*Aca termina Noticias*/
 
 
 /*Fixture*/
