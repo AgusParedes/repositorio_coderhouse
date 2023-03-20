@@ -1,0 +1,14 @@
+//base
+@import './base/extend';
+@import './base/variables';
+@import './base/mixin';
+
+//componentes
+@import'./componentes/html';
+@import './componentes/header';
+@import './componentes/footer';
+@import './componentes/main-index';
+@import './componentes/-main-noticias.scss';
+@import './componentes/-main-fixture.scss';
+@import './componentes/main-tienda';
+@import './componentes/main-registro';

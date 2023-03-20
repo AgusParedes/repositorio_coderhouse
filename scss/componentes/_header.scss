@@ -1,0 +1,158 @@
+.nav{
+    background-color: $bg-red;
+    @include flex-al-center;
+}
+.logo_nav{
+    width: 240px;
+}
+.div_paginasNav{
+    width: 80%;
+}
+.boton_nav{
+    font-size: 1rem;
+    padding: 3px 14px;
+    border: 1px solid #f8f9fa ;
+    border-radius: 0.375rem;
+    color:white;
+    background-color: transparent;
+    padding: 0.375rem 0.75rem; 
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:hover{
+        color:red;
+        background-color: white;
+    }
+}
+.registro_nav{
+    font-size: 15px;
+    width: 180px;
+    background-color: rgb(167, 16, 24);
+    border: 1px solid rgb(112, 0, 6);
+    padding: 3px 7px;
+    border-radius: 0;
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:hover{
+        background-color: white;
+        color: red;
+        border: 1px solid white;
+    }
+}
+.ul_nav {
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+.icono_nav{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+//vista mobil
+
+
+.nav_mobil{
+    background-color: #dd1d24;
+    @include d-none;
+}
+.ul_nav_mobil{
+    gap: 20px;
+                li{
+                    @include d-none;
+    }
+}
+.logo_nav_mobil{
+    width: 74px;
+}
+.boton_menu{
+    border: none;
+    &:hover{
+    box-shadow: none;
+    }
+}
+.icono_menu{
+    font-size: 30px;
+    color:white;
+}
+.registro_menu{
+    display: none;
+}
+
+//Mediaquery
+
+
+@media (max-width: 992px){
+    .nav_mobil{
+        justify-content: center;
+        display: block;
+    }
+    .div_paginasNav{
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+    }
+    .div_container_paginas{
+        @include flex-jc-center;
+        background-color: #e7e7e7;
+        width: 100%;
+    }
+    .div_paginasNav button{
+        font-size: 20px;
+        background-color: #e7e7e7;
+        color: red;
+        padding: 25px;
+        height: 83px;
+        width: 84%;
+        border-radius: 0;
+    }
+    .inicio_nav, .noticia_nav, .fixture_nav, .tienda_nav{
+        border: none;
+        @include flex-al-jc-center;
+        width: 100%;
+        height: 108px;
+        border-radius: 0;
+        border-bottom: 2px solid red;
+        font-size: 1.3rem;
+        color: red;
+    }
+    .registro_menu{
+        border: none;
+        @include flex-al-jc-center;
+        width: 445px;
+        height: 108px;
+        border-radius: 0;
+        font-size: 1.3rem;
+        color: red;
+    }
+    .icono_navMobil{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+    .ul_nav_mobil{
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .ul_nav li,.logo_nav,.registro_nav, .icono_nav{
+        @include d-none;
+    }
+    .ul_nav_mobil{
+        li{
+            @include d-inl-bl
+        }
+    }
+    .logo_nav_mobil{
+        @include d-inl-bl
+    }
+}
+@media (max-width: 366px){
+    .ul_nav_mobil{
+        margin-left: 20px;
+    }
+    .ul_nav_mobil li a{
+        font-size: 17px;
+}
+}

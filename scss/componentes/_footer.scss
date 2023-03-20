@@ -1,0 +1,105 @@
+.grid_container_footer {  display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 150px;
+    grid-auto-flow: row;
+    background-color: rgb(226, 0, 11);
+    color: white;
+    grid-template-areas:
+      "footer_izquierda footer_medio footer_derecha";
+  }
+  
+.footer_izquierda { grid-area: footer_izquierda;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    margin-left: 43px;
+    margin-top: 10px;
+}
+.footer_medio { 
+    grid-area: footer_medio;
+    @include flex-al-jc-center;
+}
+  
+.footer_derecha { 
+    grid-area: footer_derecha;
+    @include flex-al-center;
+}
+.icono_footer{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+  
+.ul_footer li{
+    display: inline-block;
+    font-size: 23px;
+  }
+.ul_footer{
+    padding-left: 0;
+  }
+.p_footer{
+    margin-bottom: 0;
+  }
+.a_footer{
+    text-decoration: none;
+    color: white;
+  }
+
+
+//vista mobil
+
+
+.grid_container_footerMobil {  display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 60px;
+    background-color:rgb(226, 0, 11);
+    color: white;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "escudo_footer escudo_footer escudo_footer escudo_footer"
+      "redes_footer redes_footer copy_footer copy_footer";
+}
+  
+.escudo_footer { 
+    grid-area: escudo_footer;
+    @include flex-jc-center;
+}
+  
+.copy_footer { 
+    grid-area: copy_footer; 
+    @include flex-jc-center;
+}
+  
+.redes_footer { 
+    grid-area: redes_footer;
+    @include flex-jc-center;
+    align-items: center;
+}
+
+.ul_footer{
+    display: flex;
+    gap: 10px;
+}
+.ul_footer li a{
+    font-size: 25px;
+}
+
+//Mediaquery
+
+
+@media (max-width: 700px){
+    .grid_container_footerMobil{
+        display: grid;
+    }
+    .grid_container_footer{
+        @include d-none;
+    }
+    .p_footer{
+        font-size: 10px;
+    }
+}
+@media (max-width: 875px){
+    .p_footer{
+        font-size: 12px;
+    }
+}

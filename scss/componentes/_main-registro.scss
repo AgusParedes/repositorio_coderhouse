@@ -1,0 +1,107 @@
+.body_registro {
+    background-image: url(../img/prueba_desenfocado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 16px;
+}
+.section_container_registro{
+    width: 49%;
+    background-color: white;
+}
+.div_container_registro{
+    @include flex-al-jc-center;
+    flex-direction: column;
+}
+.div_hijo_container_registro{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 5rem;
+}
+.div_hijo_container_registro{
+    span{
+        font-size: 18px;
+        color: #dd1e27;
+    }
+}
+.div_hijo_container_registro{
+    p{
+        font-size: 18px;
+        color: #dd1e27;
+    }
+}
+.botones_registro{
+    width: 80%;
+    height: 28px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid red;
+    letter-spacing: .6px;
+}
+.botones_registro:focus{
+    border-bottom: 1px solid red;
+    outline: none;
+}
+.botones_registro_inicioYregistro{
+    @include flex-al-jc-center;
+    width: 80%;
+    height: 42px;
+    font-size: 18px;
+    letter-spacing: .5px;
+    border: 1px solid red;
+}
+.inicioSesion{
+    background-color:#db1b24;
+    color: white;
+    cursor: pointer;
+}
+.registro{
+    background-color: white;
+    color: #dd1e27;
+    cursor: pointer;
+}
+.form_container_registro{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+.logo_registro{
+    width: 100px;
+}
+.logo_registro{
+    img{
+        width: 100%;
+    }
+}
+.div_olvidar_contraseña{
+    @include flex-jc-center;
+    margin-right: 75px;
+}
+
+//Mediaquery
+
+
+@media (max-width: 910px){
+    .section_container_registro{
+        width: 100%;
+    }
+    .div_botones_registro{
+        @include flex-jc-center;
+    }
+    .div_nombre_contraseña{
+        @include flex-jc-center;
+    }
+    .div_nombre_contraseña{
+        div{
+            width: 80%;
+        }
+    }
+    .botones_registro{
+        width: 100%;
+    }
+    .div_olvidar_contraseña{
+        margin-right: 0;
+    }
+}

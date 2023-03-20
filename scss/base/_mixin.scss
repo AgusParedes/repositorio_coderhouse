@@ -1,0 +1,23 @@
+@mixin flex-jc-center{
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-al-center{
+    display: flex;
+    align-items: center;
+}
+@mixin flex-al-jc-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin d-inl-bl{
+    display: inline-block;
+}
+@mixin d-none{
+    display: none;
+}
+@mixin titulos{
+    font-size: 45px;
+    margin: 16px 0 16px 20px;
+}
