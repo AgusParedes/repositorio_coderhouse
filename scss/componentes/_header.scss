@@ -78,7 +78,7 @@
     color:white;
 }
 .registro_menu{
-    display: none;
+    @include d-none;
 }
 
 //Mediaquery

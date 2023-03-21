@@ -395,7 +395,7 @@
         margin-bottom: 0;
     }
     .section_proxPartido{
-        display: none;
+        @include d-none;
     }
     .grid_container{
         margin-bottom: 20px;

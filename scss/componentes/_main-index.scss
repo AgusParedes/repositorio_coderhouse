@@ -21,7 +21,7 @@
     @include flex-al-center;
 }
 .p_vs{
-    display: inline-block;
+    @include d-inl-bl;
 }
 .div_resultadosIndex p{
     padding: 5px 12px;
@@ -125,8 +125,7 @@
         height: 212px;
     }
     .video_container{
-        display: flex;
-        justify-content: center;
+        @include flex-jc-center;
         margin-bottom: 20px;
     }
     .texto_historia, .texto_historia span{
@@ -144,7 +143,7 @@
         gap: 10px;
     }
     .colon_union{
-        display: none;
+        @include d-none
     }
 }
 

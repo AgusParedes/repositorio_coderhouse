@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esta es la pagina del Club Atletico Union de Santa Fe en la cual se puede ver noticias, proximos partidos, comprar vestimenta del club y registrarte para recibir notificaciones y administrar tus compras">
     <meta name="keywords" content="SantaFe Union Futbol Argentina Noticas Tienda Partidos Sudamerica copa cancha estadio inchada escudo rojo blanco ciudad basquet FutbolFemenino">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/union.75x75.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -68,7 +69,7 @@
           <div class="video_container">
             <iframe src="https://www.youtube.com/embed/p0EZ1ELUNOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video_historia"></iframe>
           </div>
-            <p class="texto_historia"><span>E</span>l 15 de abril de <span>1907</span>, un grupo de amigos y socios que habían decidido alejarse del Santa Fe Footbal Club se reúne en la casa de la familia Baragiola, ubicada en calle Catamarca, entre San Martín y San Jerónimo (hoy Eva Perón 2652) con el objetivo de crear una nueva institución, a partir de los lazos de amistad y camaradería que unían a aquel grupo entusiasta de muchachos.
+            <p class="texto_historia" ><span>E</span>l 15 de abril de <span>1907</span>, un grupo de amigos y socios que habían decidido alejarse del Santa Fe Footbal Club se reúne en la casa de la familia Baragiola, ubicada en calle Catamarca, entre San Martín y San Jerónimo (hoy Eva Perón 2652) con el objetivo de crear una nueva institución, a partir de los lazos de amistad y camaradería que unían a aquel grupo entusiasta de muchachos.
                El nombre elegido sería, entonces 'Club United' que tiempo después se castellanizó llamándose, para siempre '<span>Club Atlético Unión</span>'. Los colores elegidos fueron el rojo y el blanco a bastones verticales, en homenaje al glorioso Alumni de los hermanos Brown, el club que marcó supremacía en la etapa amateur del fútbol argentino.
                <span>Unión</span> funda con otros clubes la Liga Regional Santafesina, consagrándose Campeón durante cuatro temporadas consecutivas. En pocos años, la institución establece una clara hegemonía futbolística en la ciudad de Santa Fe y alrededores.
                En <span>1940 Unión</span> fue el primer club de la ciudad de Santa Fe inscripto en los registros de AFA. La intención de los dirigentes era ingresar directamente al torneo de Primera División, como lo habían hecho otros clubes, pero AFA no lo permitió y Unión debió competir en los viejos y duros torneos de la B.
@@ -78,10 +79,10 @@
         </article>
         <section>
             <div class="titulos_index">
-                <a href="./pages/fixture.html">Proximos Partidos</a>
+                <a href="./pages/fixture.html" data-aos="fade-up">Proximos Partidos</a>
             </div>
             <section class="section_partidosIndex">
-                <div class="partido_index colon_union">
+                <div class="partido_index colon_union" data-aos="fade-up">
                     <p class="p_partidoIndex">Lun, 30 de Enero 20:00</p>
                     <div class="equipoResultado">
                         <div class="equipos_index">
@@ -95,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="partido_index">
+                <div class="partido_index" data-aos="fade-up">
                     <p class="p_partidoIndex">Dom,5 de Febrero 21:30</p>
                     <div class="equipoResultado">
                         <div class="equipos_index">
@@ -109,20 +110,20 @@
                         </div>
                     </div>
                 </div>
-            </section>
+              </section>
         </section>
         <div class="titulos_index"> 
-            <a href="./pages/noticias.html">Noticias</a>
+            <a href="./pages/noticias.html" data-aos="fade-up">Noticias</a>
         </div>
         <section class="section_noticias">
-          <a class="card noticia_index" style="width: 24rem;" href="./pages/noticias.html">
+          <a class="card noticia_index" style="width: 24rem;" href="./pages/noticias.html" data-aos="fade-up">
             <img src="./img/noticias/kdy_noticia_index.jpg" class="card-img-top" alt="Nuevo Sponsor del equipo Union de Sante Fe">
             <div class="card-body  texto_noticia ">
               <h3 class="titulo_noticia_index">NUEVO SPONSOR TECNICO</h3>
               <p class="card-text">KDY va a vestir a los tatengues, la empresa argentina llego a un acuerdo con Union para vestir en actividades profesionales por un año!!</p>
             </div>
           </a>
-          <a class="card noticia_index" style="width: 24rem;" href="./pages/noticias.html">
+          <a class="card noticia_index" style="width: 24rem;" href="./pages/noticias.html" data-aos="fade-up">
             <img src="./img/noticias/thiago_vecino_noticia_index.jpg" class="card-img-top" alt="Nuevo jugador Thiago Vecino del equipo Union de Santa Fe">
             <div class="card-body texto_noticia ">
               <h3 class="titulo_noticia_index">THIAGO VECINO SE SUMA AL TATE</h3>
@@ -182,5 +183,11 @@
         </div>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000,
+        once: true})
+    </script>
 </body>
 </html>

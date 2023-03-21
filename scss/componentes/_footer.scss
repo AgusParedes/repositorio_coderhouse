@@ -31,7 +31,7 @@
 }
   
 .ul_footer li{
-    display: inline-block;
+    @include d-inl-bl;
     font-size: 23px;
   }
 .ul_footer{
@@ -49,7 +49,8 @@
 //vista mobil
 
 
-.grid_container_footerMobil {  display: none;
+.grid_container_footerMobil {
+    @include d-none;  
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 90px 60px;
     background-color:rgb(226, 0, 11);
@@ -80,8 +81,12 @@
     display: flex;
     gap: 10px;
 }
-.ul_footer li a{
-    font-size: 25px;
+.ul_footer{
+    li{
+        a{
+            font-size: 25px;
+        }
+    }
 }
 
 //Mediaquery
