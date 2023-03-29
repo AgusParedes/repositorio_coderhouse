@@ -7,20 +7,62 @@
     <meta name="description" content="Esta es la pagina del Club Atletico Union de Santa Fe en la cual se puede ver noticias, proximos partidos, comprar vestimenta del club y registrarte para recibir notificaciones y administrar tus compras">
     <meta name="keywords" content="SantaFe Union Futbol Argentina Noticas Tienda Partidos Sudamerica copa cancha estadio inchada escudo rojo blanco ciudad basquet FutbolFemenino">
     <script src="https://kit.fontawesome.com/31a789f0b8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/union.75x75.png">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&family=Raleway:wght@200&family=Roboto+Condensed&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>CA Union - Mi Cuenta</title>
 </head>
 <body class="body_registro">
+    <header>
+        <!--nav-->
+        <!--Aca empieza Vista mobil-->
+        <nav class="text-center nav_mobil">
+            <div class="row">
+                <div class="col-3 d-flex justify-content-center align-items-end">
+                    <ul style="list-style: none;" class="d-flex justify-content-center ul_nav_mobil">
+                        <li><a href="https://www.facebook.com/clubaunion" target="_blank" class="fa-brands fa-square-facebook icono_navMobil"></a>
+                        <li><a href="https://www.instagram.com/clubaunion/?hl=es" target="_blank" class="fa-brands fa-instagram icono_navMobil"></a>
+                        <li><a href="https://www.youtube.com/@ClubaunionOficial" target="_blank" class="fa-brands fa-youtube icono_navMobil"></a>
+                        <li><a href="https://twitter.com/clubaunion" target="_blank" class="fa-brands fa-twitter icono_navMobil"></a>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <img src="../img/union.png.png" alt="escudo de equipo de futbol de Argentina Union de santa fe" class="logo_nav_mobil">
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-end">
+                    <button class="navbar-toggler mx-4 boton_menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars icono_menu"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        </button>
+      <!--Aca termina Vista mobil-->
+      <nav class="navbar-expand-lg nav">
+        <a href="#"><img src="../img/logo_nav.png" alt="escudo de equipo de futbol de Argentina Union de santa fe" class="logo_nav"></a>
+        <div class="collapse navbar-collapse div_container_paginas" id="navbarSupportedContent">
+          <div class="d-flex justify-content-evenly div_paginasNav">
+            <a type="button" class="btn-outline-light boton_nav inicio_nav" href="../index.html">Inicio</a>
+            <a type="button" class="btn-outline-light boton_nav noticia_nav" href="../pages/noticias.html">Noticias</a>
+            <a type="button" class="btn-outline-light boton_nav fixture_nav" href="../pages/fixture.html">Fixture</a>
+            <a type="button" class="btn-outline-light boton_nav tienda_nav" href="../pages/tienda.html">Tienda</a>
+            <a type="button" class="btn-outline-light boton_nav registro_menu" href="../pages/registro.html">Iniciar Sesion/Registrarse</a>
+          </div>
+            <div class="d-flex flex-column justify-content-evenly align-items-center gap-4">
+              <a type="button" class="btn-outline-light registro_nav text-center" href="../pages/registro.html">Iniciar Sesion/Registrarse</a>
+              <ul style="list-style: none;" class="d-flex gap-3 ul_nav">
+                <li><a href="https://www.facebook.com/clubaunion" target="_blank" class="fa-brands fa-square-facebook icono_nav"></a>
+                <li><a href="https://www.instagram.com/clubaunion/?hl=es" target="_blank" class="fa-brands fa-instagram icono_nav"></a>
+                <li><a href="https://www.youtube.com/@ClubaunionOficial" target="_blank" class="fa-brands fa-youtube icono_nav"></a>
+                <li><a href="https://twitter.com/clubaunion" target="_blank" class="fa-brands fa-twitter icono_nav"></a>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
     <main>
         <section class="section_container_registro">
-            <a href="../index.html">
-                <div>
-                    <span class="fa-solid fa-arrow-left-long"></span>
-                    <span>Volver</span>
-                </div>
-            </a>
             <div class="div_container_registro">
                 <div class="div_hijo_container_registro">
                     <div class="logo_registro">
@@ -54,5 +96,55 @@
             </div>
         </section>
     </main>
+    <footer class="grid_container_footer">
+        <div class="footer_izquierda"><a href="" class="a_footer">Volver arriba <i class="fa-solid fa-arrow-up"></i></a>
+          <div class="div_redesFooter">
+            <ul style="list-style: none;" class="d-flex gap-3">
+              <li><a href="https://www.facebook.com/clubaunion" target="_blank" class="fa-brands fa-square-facebook icono_footer"></a>
+              <li><a href="https://www.instagram.com/clubaunion/?hl=es" target="_blank" class="fa-brands fa-instagram icono_footer"></a>
+              <li><a href="https://www.youtube.com/@ClubaunionOficial" target="_blank" class="fa-brands fa-youtube icono_footer"></a>
+              <li><a href="https://twitter.com/clubaunion" target="_blank" class="fa-brands fa-twitter icono_footer"></a>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_medio">
+          <div>
+            <img src="../img/union.75x75.png" alt="escudo de equipo de futbol de Argentina Union de santa fe">
+          </div>
+        </div>
+        <div class="footer_derecha">
+          <div>
+            <div>
+              <p class="p_footer"><i class="fa-regular fa-copyright"></i>CA Union/Agustin Paredes 2023</p>
+              <p class="p_footer">Tel: (0342) 453 9449 – 453 9429</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+        <!--Footer Mobil-->
+        <footer class="grid_container_footerMobil">
+          <div class="escudo_footer">
+            <div>
+              <img src="../img/union.75x75.png" alt="escudo de equipo de futbol de Argentina Union de santa fe">
+            </div>
+          </div>
+          <div class="copy_footer">
+            <div>
+              <p class="p_footer"><i class="fa-regular fa-copyright"></i>CA Union/Agustin Paredes 2023</p>
+              <p class="p_footer">Tel: (0342) 453 9449 – 453 9429</p>
+            </div>
+          </div>
+          <div class="redes_footer">
+            <div class="div_redesFooter">
+              <ul style="list-style: none;" class="ul_footer">
+                <li><a href="https://www.facebook.com/clubaunion" target="_blank" class="fa-brands fa-square-facebook icono_footer"></a>
+                <li><a href="https://www.instagram.com/clubaunion/?hl=es" target="_blank" class="fa-brands fa-instagram icono_footer"></a>
+                <li><a href="https://www.youtube.com/@ClubaunionOficial" target="_blank" class="fa-brands fa-youtube icono_footer"></a>
+                <li><a href="https://twitter.com/clubaunion" target="_blank" class="fa-brands fa-twitter icono_footer"></a>
+              </ul>
+            </div>
+          </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
