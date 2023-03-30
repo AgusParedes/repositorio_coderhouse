@@ -105,3 +105,16 @@
         margin-right: 0;
     }
 }
+@media (max-width: 750px){
+    .div_hijo_container_registro{
+        width: 525px;
+    }
+}
+@media (max-width: 365px){
+    .titulo_bienvenido{
+        margin-left: 38px;
+    }
+    .logo_registro{
+        margin-left: 40px;
+    }
+}
